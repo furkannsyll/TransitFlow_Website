@@ -112,3 +112,74 @@
 .icon.icon-linkedin {
     background-image: url(../img/icon/linkedin.svg);
 }
+
+.icon.icon-pattern {
+    background-image: url(../img/icon/pattern.svg);
+}
+
+.section-top-info {
+    background-color: #e8e8e8;
+    display: inline-block;
+    padding: 8px 4px;
+    position: relative;
+}
+
+.section-top-info::before {
+    content: "";
+    background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+    display: block;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: -4px;
+    top: 0;
+}
+
+.feature-card {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.feature-card-image {
+    margin-right: 40px;
+}
+
+.feature-card-image img {
+    width: 76px;
+    height: 50px;
+}
+
+.feature-card-info {
+    border-left: 1px solid #d8d8d8;
+    padding-left: 25px;
+}
+
+.feature-card-info p {
+    color: #666c89;
+}
+
+.feature-card-info .title {
+    color: #1c1f35;
+}
+
+.global-logistics-wrapper {
+    background-color: #ffffff;
+    position: relative;
+    padding: 85px;
+    margin-top: -120px;
+}
+
+.global-logistics-images {
+    position: relative;
+}
+
+.global-logistics-images .image-one {
+}
+
+.global-logistics-images .image-two {
+    position: absolute;
+    bottom: -35px;
+    left: -40px;
+    border-top: 20px solid #ffffff;
+    border-right: 20px solid #ffffff;
+}
