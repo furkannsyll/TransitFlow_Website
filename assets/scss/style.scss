@@ -4,6 +4,11 @@
     --bg-main-one: #091242;
 }
 
+.py-7 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
 .text-main-two {
     color: #ffb629;
 }
@@ -146,17 +151,19 @@
     display: inline-block;
     padding: 8px 4px;
     position: relative;
-}
-
-.section-top-info::before {
-    content: "";
-    background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
-    display: block;
-    width: 4px;
-    height: 100%;
-    position: absolute;
-    left: -4px;
-    top: 0;
+    &.bg-opacity-10 {
+        background-color: rgba(232, 232, 232, 0.1);
+    }
+    &::before {
+        content: "";
+        background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+        display: block;
+        width: 4px;
+        height: 100%;
+        position: absolute;
+        left: -4px;
+        top: 0;
+    }
 }
 
 .feature-card {
@@ -367,5 +374,49 @@
     }
     .user-social-media a .icon {
         filter: invert(9%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(5%) contrast(100%);
+    }
+}
+
+.contact-form {
+    .form-control {
+        background-color: rgba($color: #ffffff, $alpha: 0.05);
+        color: #ffffff;
+        transition: all 300ms;
+        &:focus {
+            background-color: rgba($color: #ffffff, $alpha: 0.1);
+        }
+    }
+    input::-webkit-input-placeholder {
+        color: #efefef;
+    }
+    input:-moz-placeholder {
+        color: #efefef;
+    }
+}
+
+.card-brand {
+    position: relative;
+    .brand-bg {
+        img {
+            width: 100%;
+        }
+        &::after {
+            content: "";
+            display: block;
+            background: linear-gradient(0deg, rgba(17, 28, 84, 1) 0%, rgba(17, 28, 84, 0) 100%);
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .brand-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: 40px;
+        object-fit: contain;
     }
 }
