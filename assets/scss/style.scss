@@ -16,7 +16,11 @@
 }
 
 .bg-main-gradient {
-    background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%); /* Bu komut ile form bölümündeki submit butonunun arka plan rengini ayarladık*/
+    background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+}
+
+.bg-two-color {
+    background: linear-gradient(90deg, #091242 50%, #f4f4f4 50%);
 }
 
 .bg-main-light {
@@ -298,14 +302,40 @@
     }
 }
 
-.btn-testimonial-arrow {
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 45px;
-    height: 45px;
-    transition: all 300ms;
+.fly-img-right {
+    padding: 3rem 3rem 3rem 6rem;
 }
 
-.btn-testimonial-arrow.swipper-button-disabled {
-    opacity: 0.5;
+.fly-img-wrapper {
+    width: 120%;
+    height: 100%;
+}
+.fly-img-right img {
+    object-fit: cover;
+}
+
+.fly-img-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.fly-img-desc {
+    background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+    position: relative;
+    max-width: 300px;
+}
+
+.fly-img-desc::before {
+    content: "";
+    display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 }
