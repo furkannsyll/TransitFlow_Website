@@ -1,6 +1,7 @@
 :root {
     --navbar-height: 70px;
     --navbar-height-n: -70px;
+    --bg-main-one: #091242;
 }
 
 .text-main-two {
@@ -338,4 +339,33 @@
     width: 70%;
     height: 100%;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.card-user-wrapper {
+    background-color: #666c89;
+    overflow: hidden;
+    & > img {
+        transition: all 300ms;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .card-user-info {
+        background-color: var(--bg-main-one);
+        position: relative;
+        color: #ffffff;
+        z-index: 1;
+        .card-user-info-desc {
+            margin-top: -30px;
+        }
+    }
+    .user-social-media {
+        background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+        padding: 20px 17px;
+        position: relative;
+        transform: translateY(-50%);
+    }
+    .user-social-media a .icon {
+        filter: invert(9%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(5%) contrast(100%);
+    }
 }
