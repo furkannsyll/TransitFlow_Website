@@ -1,3 +1,5 @@
+$mainBgColor: #091242;
+
 :root {
     --navbar-height: 70px;
     --navbar-height-n: -70px;
@@ -386,6 +388,7 @@ a {
     }
 }
 
+.form-newsletter,
 .contact-form {
     .form-control {
         background-color: rgba($color: #ffffff, $alpha: 0.05);
@@ -400,6 +403,19 @@ a {
     }
     input:-moz-placeholder {
         color: #efefef;
+    }
+}
+
+.form-newsletter {
+    input {
+        padding: 1rem !important;
+        font-size: 0.85rem !important;
+    }
+    input::-webkit-input-placeholder {
+        color: #999999;
+    }
+    input:-moz-placeholder {
+        color: #999999;
     }
 }
 
@@ -466,5 +482,73 @@ article {
 .blog-desc {
     p {
         margin: 0;
+    }
+}
+
+.bg-footer-image {
+    background-image: url(../img/background/bg-footer-top.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    &::after {
+        background-color: rgba($color: #091242, $alpha: 0.6);
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+footer {
+    .footer-top {
+        background-color: #1d2551;
+    }
+    .footer-logo {
+        background-color: $mainBgColor;
+    }
+    .footer-sitemap-list {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+            a {
+                display: block;
+                color: #ffffff;
+                transition: all 200ms ease-in-out;
+                &:hover {
+                    padding-left: 15px;
+                }
+            }
+        }
+        &.copyright-list {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 0;
+
+            li a {
+                color: #8388a7;
+                padding-right: 5px;
+                &:hover {
+                    padding-right: 0;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+
+    .copyright-text {
+        font-weight: 500;
+        color: #ffffff;
+    }
+    .border-footer-color {
+        border-top: 1px solid #4e5683;
+    }
+    @media (min-width: 767.98px) {
+        .w-md-75 {
+            width: 75% !important;
+        }
     }
 }
