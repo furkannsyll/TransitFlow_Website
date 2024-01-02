@@ -13,15 +13,20 @@
 <body>
     <header>
         <div class="bg-main-blue">
-            <div class="header-wrapper">
-                <div class="container h-100">
+            <div class="header-wrapper py-4 px-2 p-lg-5">
+                <div class="container">
                     <div class="row">
-                        <div class="col-4">
-                            <div class="logo-wrapper">
+                        <div class="col-10 col-lg-4">
+                            <div class="logo-wrapper justify-content-center justify-content-lg-between">
                                 <img src="assets/img/logo.svg" alt="Company Logo">
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-2 d-flex align-items-center justify-content-center d-lg-none z-3">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="d-none d-lg-block col-lg-8">
                             <div class="row">
                                 <div class="col-4">
                                     <div class="d-flex">
@@ -64,13 +69,10 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-main-blue bg-opacity-25 z-2" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-main-blue bg-opacity-25 z-2 position-sticky top-0" data-bs-theme="dark">
         <div class="container h-100">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse h-100" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-3 p-md-4 p-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -88,7 +90,7 @@
                     </li>
                 </ul>
                 <span class="navbar-end">
-                    <div class="navbar-social-media">
+                    <div class="navbar-social-media w-100 w-md-auto justify-content-center justify-content-lg-end">
                         <a href="#">
                             <i class="icon icon-instagram"></i>
                         </a>
@@ -102,7 +104,7 @@
                             <i class="icon icon-linkedin"></i>
                         </a>
                     </div>
-                    <a href="#" class="navbar-quick-btn">Request Quote</a>
+                    <a href="#" class="d-none d-lg-flex navbar-quick-btn fw-medium">Request Quote</a>
                 </span>
             </div>
         </div>
@@ -148,7 +150,7 @@
                             </div>
                             <div class="hero-slider-overlay"></div>
                             <div class="hero-slider-image">
-                                <img src="assets/img/slider/slider-bg-2.jpg" class="w-100 h-100" alt="slider 2">
+                                <img loading="lazy" src="assets/img/slider/slider-bg-2.jpg" class="w-100 h-100" alt="slider 2">
                             </div>
                         </div>
                     </div>
@@ -168,7 +170,7 @@
                             </div>
                             <div class="hero-slider-overlay"></div>
                             <div class="hero-slider-image">
-                                <img src="assets/img/slider/slider-bg-3.jpg" class="w-100 h-100" alt="slider 3">
+                                <img loading="lazy" src="assets/img/slider/slider-bg-3.jpg" class="w-100 h-100" alt="slider 3">
                             </div>
                         </div>
                     </div>
@@ -180,56 +182,56 @@
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="section-top-info">
                         What We Do
                     </div>
-                    <div class="section-heading pt-3">
+                    <div class="section-heading pt-3 pb-4 pb-lg-0">
                         <span class="fs-1 lh-sm fw-bolder">Safe & Reliable Cargo Solutions</span>
                     </div>
                 </div>
-                <div class="col-9">
+                <div class="col-12 col-lg-9">
                     <div class="row">
-                        <div class="col-6">
-                            <div class="feature-card">
+                        <div class="col-12 col-lg-6">
+                            <div class="feature-card mb-3 mb-lg-5">
                                 <div class="feature-card-image">
                                     <img src="assets/img/feature/ship.svg" alt="Sea Transport">
                                 </div>
                                 <div class="feature-card-info">
-                                    <span class="d-block fs-4 fw-medium mb-1">Sea Transport Services</span>
+                                    <span class="d-block fs-4 fw-medium mb-1 title">Sea Transport Services</span>
                                     <p>Following the quality of our service thus having gained trust of our many clients.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="feature-card">
+                        <div class="col-12 col-lg-6">
+                            <div class="feature-card mb-3 mb-lg-5">
                                 <div class="feature-card-image">
                                     <img src="assets/img/feature/warehouse.svg" alt="Warehousing Services">
                                 </div>
                                 <div class="feature-card-info">
-                                    <span class="d-block fs-4 fw-medium mb-1">Warehousing Services</span>
+                                    <span class="d-block fs-4 fw-medium mb-1 title">Warehousing Services</span>
                                     <p>Following the quality of our service thus having gained trust of our many clients.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="feature-card">
+                        <div class="col-12 col-lg-6">
+                            <div class="feature-card mb-3 mb-lg-5">
                                 <div class="feature-card-image">
                                     <img src="assets/img/feature/air-flight.svg" alt="Air Flight Services">
                                 </div>
                                 <div class="feature-card-info">
-                                    <span class="d-block fs-4 fw-medium mb-1">Air Flight Services</span>
+                                    <span class="d-block fs-4 fw-medium mb-1 title">Air Flight Services</span>
                                     <p>Following the quality of our service thus having gained trust of our many clients.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="feature-card">
+                        <div class="col-12 col-lg-6">
+                            <div class="feature-card mb-3 mb-lg-5">
                                 <div class="feature-card-image">
                                     <img src="assets/img/feature/pickup.svg" alt="Local Shipping Services">
                                 </div>
                                 <div class="feature-card-info">
-                                    <span class="d-block fs-4 fw-medium mb-1">Local Shipping Services</span>
+                                    <span class="d-block fs-4 fw-medium mb-1 title">Local Shipping Services</span>
                                     <p>Following the quality of our service thus having gained trust of our many clients.</p>
                                 </div>
                             </div>
@@ -245,7 +247,7 @@
         <div class="container">
             <div class="global-logistics-wrapper">
                 <div class="row justify-content-between">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1 mt-3 mt-md-5 mt-lg-0">
                         <div>
                             <div class="section-top-info">
                                 Why Us
@@ -267,7 +269,7 @@
                                     Delivery On Time
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center">
                                 <div class="feature-btn-image me-3">
                                     <img src="assets/img/icon/banknote.svg" alt="banknote">
                                 </div>
@@ -277,10 +279,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12 col-lg-5 order-1 order-lg-2">
                         <div class="global-logistics-images">
                             <img src="assets/img/section/airplane.jpg" class="image-one" alt="airplane">
-                            <img src="assets/img/section/packets.jpg" class="image-two" alt="packets">
+                            <img src="assets/img/section/packets.jpg" class="image-two d-none d-md-block" alt="packets">
                         </div>
                     </div>
                 </div>
@@ -289,16 +291,16 @@
     </section>
 
     <section>
-        <div class="container py-5">
-            <div class="row p-0 border-bottom border-top">
-                <div class="col-6 border-end">
+        <div class="container py-4">
+            <div class="row p-0 border-top border-bottom g-0">
+                <div class="col-12 col-md-6 border-md-end p-4">
                     <div class="d-flex p-4 align-items-center justify-content-center gap-3">
                         <span class="fw-bold fs-1">1294</span>
                         <i class="icon icon-pattern"></i>
                         <span class="fs-4">Delivered Packages</span>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6 p-4">
                     <div class="d-flex p-4 align-items-center justify-content-center gap-3">
                         <span class="fw-bold fs-1">3594</span>
                         <i class="icon icon-pattern"></i>
@@ -405,7 +407,7 @@
                 <div class="swiper slider--testimonial">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="card-testimonial p-3 bg-main-light">
+                            <div class="card-testimonial p-3 p-md-5 bg-main-light">
                                 <div class="card-testimonial-header d-flex justify-content-between mb-5">
                                     <div class="d-flex align-items-center gap-3">
                                         <img src="assets/img/testimonial/user-1.png" class="rounded-circle" width="85" height="85" alt="user">
@@ -414,7 +416,7 @@
                                             <small>Fuel Company</small>
                                         </div>
                                     </div>
-                                    <img src="assets/img/icon/comment.svg" alt="comment">
+                                    <img src="assets/img/icon/comment.svg" class="d-none d-md-inline-block" alt="comment">
                                 </div>
                                 <div class="card-testimonial-content">
                                     <p class="mb-4">
@@ -431,7 +433,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card-testimonial p-3 bg-main-blue text-white">
+                            <div class="card-testimonial p-3 p-md-5 bg-main-blue text-white">
                                 <div class="card-testimonial-header d-flex justify-content-between mb-5">
                                     <div class="d-flex align-items-center gap-3">
                                         <img src="assets/img/testimonial/user-2.png" class="rounded-circle" width="85" height="85" alt="user">
@@ -440,7 +442,7 @@
                                             <small>Restoration Company</small>
                                         </div>
                                     </div>
-                                    <img src="assets/img/icon/comment.svg" alt="comment">
+                                    <img src="assets/img/icon/comment.svg" class="d-none d-md-inline-block" alt="comment">
                                 </div>
                                 <div class="card-testimonial-content">
                                     <p class="mb-4">
@@ -457,7 +459,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card-testimonial p-3 bg-main-light">
+                            <div class="card-testimonial p-3 p-md-5 bg-main-light">
                                 <div class="card-testimonial-header d-flex justify-content-between mb-5">
                                     <div class="d-flex align-items-center gap-3">
                                         <img src="assets/img/testimonial/user-1.png" class="rounded-circle" width="85" height="85" alt="user">
@@ -466,7 +468,7 @@
                                             <small>Fuel Company</small>
                                         </div>
                                     </div>
-                                    <img src="assets/img/icon/comment.svg" alt="comment">
+                                    <img src="assets/img/icon/comment.svg" class="d-none d-md-inline-block" alt="comment">
                                 </div>
                                 <div class="card-testimonial-content">
                                     <p class="mb-4">
@@ -483,7 +485,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card-testimonial p-3 bg-main-blue text-white">
+                            <div class="card-testimonial p-3 p-md-5 bg-main-blue text-white">
                                 <div class="card-testimonial-header d-flex justify-content-between mb-5">
                                     <div class="d-flex align-items-center gap-3">
                                         <img src="assets/img/testimonial/user-2.png" class="rounded-circle" width="85" height="85" alt="user">
@@ -492,7 +494,7 @@
                                             <small>Restoration Company</small>
                                         </div>
                                     </div>
-                                    <img src="assets/img/icon/comment.svg" alt="comment">
+                                    <img src="assets/img/icon/comment.svg" class="d-none d-md-inline-block" alt="comment">
                                 </div>
                                 <div class="card-testimonial-content">
                                     <p class="mb-4">
@@ -517,7 +519,7 @@
     <section class="bg-two-color">
         <div class="container">
             <div class="row">
-                <div class="col-6 p-5">
+                <div class="col-12 col-lg-6 py-3 p-lg-5">
                     <div class="fly-img-wrapper position-relative">
                         <img src="assets/img/content/fly-img.png" class="w-100 h-100" alt="fly">
                         <div class="fly-img-content">
@@ -532,7 +534,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 fly-img-right">
+                <div class="col-12 col-lg-6 p-2 fly-img-right">
                     <div>
                         <div class="section-top-info">
                             Why Choose
@@ -547,7 +549,7 @@
                         </div>
                         <div class="feature-btn-wrapper">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <div class="d-flex align-items-center mb-3">
                                         <div class="feature-btn-img me-3">
                                             <img src="assets/img/icon/package-cargo.svg" alt="package-cargo">
@@ -573,7 +575,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <div class="d-flex align-items-center mb-3">
                                         <div class="feature-btn-img me-3">
                                             <img src="assets/img/icon/ship.svg" alt="ship">
@@ -698,10 +700,10 @@
         </div>
     </section>
 
-    <section class="bg-main-blue py-7">
+    <section class="bg-main-blue py-4 py-lg-7">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <div>
                         <div class="section-top-info bg-opacity-10 text-white">
                             Contact
@@ -747,7 +749,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-lg-8">
                     <form action="" class="contact-form">
                         <div class="row">
                             <div class="col-6 mb-4">
@@ -826,7 +828,7 @@
     <section>
         <div class="container py-5">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-10 mx-auto">
                     <div class="text-center">
                         <div class="section-top-info">
                             Our Blog
@@ -839,13 +841,13 @@
                         <article class="border-bottom">
                             <a href="#">
                                 <div class="row my-3">
-                                    <div class="col-5">
+                                    <div class="col-12 col-lg-5 mb-3 mb-lg-0">
                                         <div class="blog-image">
                                             <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-1.jpg" class="lazyload w-100" alt="post-1" loading="lazy">
                                             <div class="blog-image-hover">Read More</div>
                                         </div>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-2 col-lg-1">
                                         <div class="d-flex flex-column align-items-center">
                                             <i class="icon icon-date"></i>
                                             <time datetime="2023-11-11">
@@ -854,7 +856,7 @@
                                             </time>
                                         </div>
                                     </div>
-                                    <div class="col-6 border-start">
+                                    <div class="col-10 col-lg-6 border-start">
                                         <div class="blog-title fs-3 fw-semibold mb-3">
                                             Inland freight a worthy solution for your business
                                         </div>
@@ -874,13 +876,13 @@
                         <article class="border-bottom">
                             <a href="#">
                                 <div class="row my-3">
-                                    <div class="col-5">
+                                    <div class="col-12 col-lg-5 mb-3 mb-lg-0">
                                         <div class="blog-image">
                                             <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-2.jpg" class="lazyload w-100" alt="post-2" loading="lazy">
                                             <div class="blog-image-hover">Read More</div>
                                         </div>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-2 col-lg-1">
                                         <div class="d-flex flex-column align-items-center">
                                             <i class="icon icon-date"></i>
                                             <time datetime="2023-11-11">
@@ -889,7 +891,7 @@
                                             </time>
                                         </div>
                                     </div>
-                                    <div class="col-6 border-start">
+                                    <div class="col-10 col-lg-6 border-start">
                                         <div class="blog-title fs-3 fw-semibold mb-3">
                                             How technology can help redraw the supply chain map
                                         </div>
@@ -909,13 +911,13 @@
                         <article class="border-bottom">
                             <a href="#">
                                 <div class="row my-3">
-                                    <div class="col-5">
+                                    <div class="col-12 col-lg-5 mb-3 mb-lg-0">
                                         <div class="blog-image">
                                             <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-2.jpg" class="lazyload w-100" alt="post-2" loading="lazy">
                                             <div class="blog-image-hover">Read More</div>
                                         </div>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-2 col-lg-1">
                                         <div class="d-flex flex-column align-items-center">
                                             <i class="icon icon-date"></i>
                                             <time datetime="2023-11-11">
@@ -924,7 +926,7 @@
                                             </time>
                                         </div>
                                     </div>
-                                    <div class="col-6 border-start">
+                                    <div class="col-10 col-lg-6 border-start">
                                         <div class="blog-title fs-3 fw-semibold mb-3">
                                             Five things you should have ready for your broker
                                         </div>
@@ -955,18 +957,18 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-6 col-lg-4">
                         <div class="footer-logo py-4 px-4">
                             <img src="assets/img/logo.svg" alt="Company name">
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-none d-lg-flex align-items-center">
                         <a href="#" class="d-block text-white py-4">Pages</a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-none d-lg-flex align-items-center">
                         <a href="#" class="d-block text-white py-4">Utility</a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-lg-flex align-items-center">
                         <a href="#" class="d-block text-white py-4">Subscribe</a>
                     </div>
                 </div>
@@ -974,8 +976,8 @@
             <div class="bg-main-blue pb-4">
                 <div class="container">
                     <div class="row py-4">
-                        <div class="col-4">
-                            <div class="px-4">
+                        <div class="col-12 col-lg-4">
+                            <div class="px-0 px-lg-4">
                                 <p class="text-white">Leverage agile frameworks to provide a robust synopsis for strategy collaborative thinking to further the overall value proposition.</p>
                                 <div class="w-100 mb-3 mt-4">
                                     <div class="d-flex">
@@ -1001,7 +1003,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 d-none d-lg-block">
                             <ul class="footer-sitemap-list">
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Our Team</a></li>
@@ -1010,7 +1012,7 @@
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 d-none d-lg-block">
                             <ul class="footer-sitemap-list">
                                 <li><a href="#">Style Guide</a></li>
                                 <li><a href="#">Changelog</a></li>
@@ -1019,7 +1021,7 @@
                                 <li><a href="#">Not Found</a></li>
                             </ul>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 d-none d-lg-block">
                             <div class="form-newsletter">
                                 <div class="row w-100 w-md-75">
                                     <div class="col-12 mb-3">
