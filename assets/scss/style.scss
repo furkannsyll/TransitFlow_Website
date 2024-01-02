@@ -132,10 +132,10 @@ a {
             top: 50%;
             left: auto;
             transform: translate(-120%, -50%);
-            width: 35%;
             z-index: 1;
             transition: all 900ms;
-            @media (max-width: 767.98px) {
+
+            @media (min-width: 768px) {
                 width: 35%;
             }
             .section-desc {
@@ -156,6 +156,7 @@ a {
                 border: 1px solid #ffda68;
                 border-radius: 3px;
                 box-shadow: rgba(33, 35, 38, 0.1) 0 10px 10px -10px;
+                font-size: 0.95rem;
 
                 & span {
                     position: relative;

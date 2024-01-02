@@ -516,7 +516,7 @@
         </div>
     </section>
 
-    <section class="bg-two-color">
+    <section class="lg-bg-two-color">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 py-3 p-lg-5">
@@ -566,7 +566,7 @@
                                             Global Tracking
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center mb-3">
                                         <div class="feature-btn-img me-3">
                                             <img src="assets/img/icon/time-delivery.svg" alt="time-delivery">
                                         </div>
@@ -1082,15 +1082,23 @@
     <script>
         const sliderHero = new Swiper(".slider--hero", {
             slidesPerView: 1,
-            // autoplay: {
-            // delay: 3500,
-            //  disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
             loop: true,
         });
         const sliderBlog = new Swiper(".slider--blog", {
-            slidesPerView: 5,
+            slidesPerView: 1,
             spaceBetween: 30,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+                992: {
+                    slidesPerView: 5,
+                },
+            },
         });
         const sliderTestimonial = new Swiper(".slider--testimonial", {
             slidesPerView: 1,
@@ -1103,11 +1111,24 @@
                 768: {
                     slidesPerView: 2,
                 },
+                992: {
+                    slidesPerView: 2,
+                },
             },
         });
         const sliderTeam = new Swiper(".slider--team", {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+            },
         });
     </script>
 </body>
