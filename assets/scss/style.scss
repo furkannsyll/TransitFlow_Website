@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
 $mainBgColor: #091242;
 
 :root {
     --navbar-height: 70px;
     --navbar-height-n: -70px;
     --bg-main-one: #091242;
+}
+
+/* setting */
+body,
+html {
+    font-family: "Rubik", system-ui, Helvetica, Arial, sans-serif;
 }
 
 a {
