@@ -64,7 +64,7 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-main-blue bg-opacity-25" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-main-blue bg-opacity-25 z-2" data-bs-theme="dark">
         <div class="container h-100">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -109,8 +109,71 @@
     </nav>
 
     <section>
-        <div class="slider-wrapper">
-            <img src="assets/img/slider/banner.png" class="w-100 h-100" alt="slider 1">
+        <div class="slider-hero-wrapper">
+            <div class="swiper slider--hero">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero-slider">
+                            <div class="container">
+                                <div class="hero-slider-content">
+                                    <div class="section-top-info bg-opacity-50 text-white">
+                                        Logistics & Supply Chain Solutions
+                                    </div>
+                                    <div class="section-heading pt-3 mb-3">
+                                        <span class="fs-2 lh-sm fw-bolder text-white">Your Gateway to any Destination in the World</span>
+                                    </div>
+                                    <p class="text-white">In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus.</p>
+                                    <a href="#" class="btn-content"><span>Explore More</span></a>
+                                </div>
+                            </div>
+                            <div class="hero-slider-overlay"></div>
+                            <div class="hero-slider-image">
+                                <img src="assets/img/slider/slider-bg-1.jpg" class="w-100 h-100" alt="slider 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-slider">
+                            <div class="container">
+                                <div class="hero-slider-content">
+                                    <div class="section-top-info bg-opacity-50 text-white">
+                                        Chain Solutions
+                                    </div>
+                                    <div class="section-heading pt-3 mb-3">
+                                        <span class="fs-2 lh-sm fw-bolder text-white">World champion in export</span>
+                                    </div>
+                                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsum ipsa id quia neque placeat distinctio reiciendis.</p>
+                                    <a href="#" class="btn-content"><span>Explore More</span></a>
+                                </div>
+                            </div>
+                            <div class="hero-slider-overlay"></div>
+                            <div class="hero-slider-image">
+                                <img src="assets/img/slider/slider-bg-2.jpg" class="w-100 h-100" alt="slider 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-slider">
+                            <div class="container">
+                                <div class="hero-slider-content">
+                                    <div class="section-top-info bg-opacity-50 text-white">
+                                        Russian Solutions
+                                    </div>
+                                    <div class="section-heading pt-3 mb-3">
+                                        <span class="fs-2 lh-sm fw-bolder text-white">Global solutions tailored for you</span>
+                                    </div>
+                                    <p class="text-white">In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus.</p>
+                                    <a href="#" class="btn-content"><span>Explore More</span></a>
+                                </div>
+                            </div>
+                            <div class="hero-slider-overlay"></div>
+                            <div class="hero-slider-image">
+                                <img src="assets/img/slider/slider-bg-3.jpg" class="w-100 h-100" alt="slider 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1015,6 +1078,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        const sliderHero = new Swiper(".slider--hero", {
+            slidesPerView: 1,
+            // autoplay: {
+            // delay: 3500,
+            //  disableOnInteraction: false,
+            // },
+            loop: true,
+        });
         const sliderBlog = new Swiper(".slider--blog", {
             slidesPerView: 5,
             spaceBetween: 30,

@@ -76,8 +76,80 @@ a {
     font-weight: bold;
 }
 
-.slider-wrapper {
+.slider-hero-wrapper {
+    min-height: 400px;
     margin-top: var(--navbar-height-n);
+}
+
+.hero-slider {
+    $pattern-size: 60px;
+    $pattern-bg: -60px;
+    position: relative;
+    overflow: hidden;
+    &-overlay {
+        background-color: rgba($color: #091242, $alpha: 0.4);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+    }
+    &-content {
+        position: absolute;
+        top: 50%;
+        left: auto;
+        transform: translate(-120%, -50%);
+        width: 35%;
+        z-index: 1;
+        transition: all 900ms;
+        @media (max-width: 767.98px) {
+            width: 70%;
+        }
+
+        .btn-content {
+            background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+            display: inline-block;
+            position: relative;
+            padding: 15px 30px;
+            overflow: hidden;
+            color: #000000;
+            font-weight: 500;
+            border: 1px solid #ffda68;
+            border-radius: 3px;
+            box-shadow: rgba(33, 35, 38, 0.1) 0 10px 10px -10px;
+
+            & span {
+                position: relative;
+                z-index: 1;
+            }
+            &::after {
+                content: "";
+                background-color: #ffffff;
+                position: absolute;
+                right: $pattern-bg / 3;
+                bottom: $pattern-bg - 20px;
+                width: $pattern-size;
+                height: $pattern-size * 2;
+                border-radius: 50%;
+                transform: rotate(15deg);
+                transition: all 300ms ease-in-out;
+            }
+            &:hover::after {
+                width: $pattern-size * 3.5;
+                height: $pattern-size * 3.5;
+            }
+        }
+    }
+    &-image {
+        min-height: 400px;
+    }
+}
+
+.swiper-slide {
+    &.swiper-slide-active {
+        .hero-slider-content {
+            transform: translate(0%, -50%);
+        }
+    }
 }
 
 .navbar {
@@ -164,6 +236,9 @@ a {
     position: relative;
     &.bg-opacity-10 {
         background-color: rgba(232, 232, 232, 0.1);
+    }
+    &.bg-opacity-50 {
+        background-color: rgba(4, 28, 55, 0.5);
     }
     &::before {
         content: "";
