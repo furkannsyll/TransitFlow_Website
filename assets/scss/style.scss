@@ -737,3 +737,65 @@ footer {
         }
     }
 }
+
+.header-bg {
+    --header-bg-size: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: var(--header-bg-size);
+    margin-top: var(--navbar-height-n);
+    padding-top: var(--navbar-height);
+    position: relative;
+    &::before {
+        content: "";
+        background: rgb(3, 45, 95);
+        background: linear-gradient(90deg, rgba(3, 45, 95, 1) 10%, rgba(3, 45, 95, 0) 100%);
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        position: absolute;
+    }
+    &-gallery {
+        background-image: url("../img/header/fly.jpg");
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: var(--header-bg-size);
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.gallery-item-wrapper {
+    margin-bottom: 1.5rem;
+    a {
+        position: relative;
+        display: block;
+        img {
+            width: 100%;
+        }
+        &::after {
+            content: "";
+            background-color: rgba($color: #1c1f35, $alpha: 0.9);
+            background-image: url("../img/icon/link.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 200ms;
+        }
+        &:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
