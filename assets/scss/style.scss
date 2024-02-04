@@ -657,9 +657,11 @@ a {
         .blog-desc {
             min-height: 72px;
             overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
+            &-short {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
             p {
                 margin: 0;
             }
@@ -758,6 +760,9 @@ footer {
     }
     &-gallery {
         background-image: url("../img/header/fly.jpg");
+    }
+    &-news {
+        background-image: url("../img/header/news.jpg");
     }
     &-content {
         display: flex;

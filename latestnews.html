@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>latestnews</title>
+</head>
+
+<body>
+    <header>
+        <div class="bg-main-blue">
+            <div class="header-wrapper py-4 px-2 p-lg-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-10 col-lg-4">
+                            <div class="logo-wrapper justify-content-center justify-content-lg-between">
+                                <img src="assets/img/logo.svg" alt="Company Logo">
+                            </div>
+                        </div>
+                        <div class="col-2 d-flex align-items-center justify-content-center d-lg-none z-2">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="d-none d-lg-block col-lg-8">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="d-flex">
+                                        <div class="icon-wrapper">
+                                            <img src="assets/img/icon/clock.svg" alt="time">
+                                        </div>
+                                        <div class="info-wrapper">
+                                            Mon - Sat 9.00 - 18.00<br />
+                                            Sunday Closed
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="d-flex">
+                                        <div class="icon-wrapper">
+                                            <img src="assets/img/icon/mail.svg" alt="mail">
+                                        </div>
+                                        <div class="info-wrapper">
+                                            Email<br />
+                                            <a href="mailto:contact@logistics.com">contact@logistics.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="d-flex">
+                                        <div class="icon-wrapper">
+                                            <img src="assets/img/icon/phone.svg" alt="phone">
+                                        </div>
+                                        <div class="info-wrapper">
+                                            Call Us <br />
+                                            <a href="tel:(00)112365489">(00) 112 365 489</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-main-blue bg-opacity-25 z-2 position-sticky top-0" data-bs-theme="dark">
+        <div class="container h-100">
+            <div class="collapse navbar-collapse h-100" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-3 p-md-4 p-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <span class="navbar-end">
+                    <div class="navbar-social-media w-100 w-md-auto justify-content-center justify-content-lg-end">
+                        <a href="#">
+                            <i class="icon icon-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon icon-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon icon-x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon icon-linkedin"></i>
+                        </a>
+                    </div>
+                    <a href="#" class="d-none d-lg-flex navbar-quick-btn fw-medium">Request Quote</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="header-bg header-bg-news">
+            <div class="container">
+                <div class="header-bg-content">
+                    <div class="section-top-info bg-opacity-50 text-white">
+                        Blog
+                    </div>
+                    <div class="section-heading pt-3 mb-3">
+                        <span class="fs-2 lh-sm fw-bolder text-white">Our Latest News</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-10 mx-auto">
+                    <div class="text-center">
+                        <div class="section-top-info">
+                            Our Blog
+                        </div>
+                        <div class="section-heading pt-3 mb-3">
+                            <span class="fs-2 lh-sm fw-bolder">Our Latest News</span>
+                        </div>
+                    </div>
+                    <div class="blog-list border-top">
+                        <article class="border-bottom">
+                            <a href="#">
+                                <div class="row my-3">
+                                    <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+                                        <div class="blog-image">
+                                            <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-1.jpg" class="lazyload w-100" alt="post-1" loading="lazy">
+                                            <div class="blog-image-hover">Read More</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-lg-1">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <i class="icon icon-date"></i>
+                                            <time datetime="2023-11-11">
+                                                <span class="d-block text-black fs-2 fw-bolder">08</span>
+                                                <span class="info-month text-black">Aug.</span>
+                                            </time>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-lg-6 border-start">
+                                        <div class="blog-title fs-3 fw-semibold mb-3">
+                                            Inland freight a worthy solution for your business
+                                        </div>
+                                        <div class="blog-desc text-body-secondary">
+                                            <p>We are dedicated in creating added value for our customers by implementing modern technology in our work.</p>
+                                            <ul class="mt-3 text-black">
+                                                <li>Urgent transport solutions</li>
+                                                <li>Reliable & experienced staffs</li>
+                                                <li>Urgent transport solutions</li>
+                                                <li>Reliable & experienced staffs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="border-bottom">
+                            <a href="#">
+                                <div class="row my-3">
+                                    <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+                                        <div class="blog-image">
+                                            <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-2.jpg" class="lazyload w-100" alt="post-2" loading="lazy">
+                                            <div class="blog-image-hover">Read More</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-lg-1">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <i class="icon icon-date"></i>
+                                            <time datetime="2023-11-11">
+                                                <span class="d-block text-black fs-2 fw-bolder">12</span>
+                                                <span class="info-month text-black">Aug.</span>
+                                            </time>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-lg-6 border-start">
+                                        <div class="blog-title fs-3 fw-semibold mb-3">
+                                            How technology can help redraw the supply chain map
+                                        </div>
+                                        <div class="blog-desc text-body-secondary">
+                                            <p>We are dedicated in creating added value for our customers by implementing modern technology in our work.</p>
+                                            <ul class="mt-3 text-black">
+                                                <li>Urgent transport solutions</li>
+                                                <li>Reliable & experienced staffs</li>
+                                                <li>Urgent transport solutions</li>
+                                                <li>Reliable & experienced staffs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="border-bottom">
+                            <a href="#">
+                                <div class="row my-3">
+                                    <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+                                        <div class="blog-image">
+                                            <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-3.jpg" class="lazyload w-100" alt="post-3" loading="lazy">
+                                            <div class="blog-image-hover">Read More</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-lg-1">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <i class="icon icon-date"></i>
+                                            <time datetime="2023-11-11">
+                                                <span class="d-block text-black fs-2 fw-bolder">25</span>
+                                                <span class="info-month text-black">Sept.</span>
+                                            </time>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-lg-6 border-start">
+                                        <div class="blog-title fs-3 fw-semibold mb-3">
+                                            Five things you should have ready for your broker
+                                        </div>
+                                        <div class="blog-desc text-body-secondary">
+                                            <p>We are dedicated in creating added value for our customers by implementing modern technology in our work.</p>
+                                            <ul class="mt-3 text-black">
+                                                <li>Urgent transport solutions</li>
+                                                <li>Reliable & experienced staffs</li>
+                                                <li>Urgent transport solutions</li>
+                                                <li>Reliable & experienced staffs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="border-bottom">
+                            <a href="#">
+                                <div class="row my-3">
+                                    <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+                                        <div class="blog-image">
+                                            <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-4.jpg" class="lazyload w-100" alt="post-4" loading="lazy">
+                                            <div class="blog-image-hover">Read More</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-lg-1">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <i class="icon icon-date"></i>
+                                            <time datetime="2023-11-11">
+                                                <span class="d-block text-black fs-2 fw-bolder">28</span>
+                                                <span class="info-month text-black">Sept.</span>
+                                            </time>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-lg-6 border-start">
+                                        <div class="blog-title fs-3 fw-semibold mb-3">
+                                            Four simple tips for becoming a healthier truck driver
+                                        </div>
+                                        <div class="blog-desc text-body-secondary">
+                                            <p>We are dedicated in creating added value for our customers by implementing modern technology in our work.</p>
+                                            <ul class="mt-3 text-black">
+                                                <li>Urgent transport solutions</li>
+                                                <li>Reliable & experienced staffs</li>
+                                                <li>Urgent transport solutions</li>
+                                                <li>Reliable & experienced staffs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="border-bottom">
+                            <a href="#">
+                                <div class="row my-3">
+                                    <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+                                        <div class="blog-image">
+                                            <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-5.jpg" class="lazyload w-100" alt="post-5" loading="lazy">
+                                            <div class="blog-image-hover">Read More</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-lg-1">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <i class="icon icon-date"></i>
+                                            <time datetime="2023-11-11">
+                                                <span class="d-block text-black fs-2 fw-bolder">30</span>
+                                                <span class="info-month text-black">Sept.</span>
+                                            </time>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-lg-6 border-start">
+                                        <div class="blog-title fs-3 fw-semibold mb-3">
+                                            What Is The Role Of A Logistics Operations Manager
+                                        </div>
+                                        <div class="blog-desc text-body-secondary">
+                                            <p>We are dedicated in creating added value for our customers by implementing modern technology in our work.</p>
+                                            <ul class="mt-3 text-black">
+                                                <li>Urgent transport solutions</li>
+                                                <li>Reliable & experienced staffs</li>
+                                                <li>Urgent transport solutions</li>
+                                                <li>Reliable & experienced staffs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        <div class="footer-logo py-4 px-4">
+                            <img src="assets/img/logo.svg" alt="Company name">
+                        </div>
+                    </div>
+                    <div class="col-2 d-none d-lg-flex align-items-center">
+                        <a href="#" class="d-block text-white py-4">Pages</a>
+                    </div>
+                    <div class="col-2 d-none d-lg-flex align-items-center">
+                        <a href="#" class="d-block text-white py-4">Utility</a>
+                    </div>
+                    <div class="col-4 d-none d-lg-flex align-items-center">
+                        <a href="#" class="d-block text-white py-4">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-main-blue pb-4">
+                <div class="container">
+                    <div class="row py-4">
+                        <div class="col-12 col-lg-4">
+                            <div class="px-0 px-lg-4">
+                                <p class="text-white">Leverage agile frameworks to provide a robust synopsis for strategy collaborative thinking to further the overall value proposition.</p>
+                                <div class="w-100 mb-3 mt-4">
+                                    <div class="d-flex">
+                                        <div class="icon-wrapper">
+                                            <img src="assets/img/icon/mail.svg" alt="mail">
+                                        </div>
+                                        <div class="info-wrapper">
+                                            Email<br>
+                                            <a href="mailto:contact@logistics.com">contact@logistics.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex">
+                                        <div class="icon-wrapper">
+                                            <img src="assets/img/icon/phone.svg" alt="phone">
+                                        </div>
+                                        <div class="info-wrapper">
+                                            Call Us<br>
+                                            <a href="tel:(00)112365489">(00) 112 365 489</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-lg-block">
+                            <ul class="footer-sitemap-list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Our Project</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2 d-none d-lg-block">
+                            <ul class="footer-sitemap-list">
+                                <li><a href="#">Style Guide</a></li>
+                                <li><a href="#">Changelog</a></li>
+                                <li><a href="#">Licenses</a></li>
+                                <li><a href="#">Protected</a></li>
+                                <li><a href="#">Not Found</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4 d-none d-lg-block">
+                            <div class="form-newsletter">
+                                <div class="row w-100 w-md-75">
+                                    <div class="col-12 mb-3">
+                                        <div class="input-group-lg">
+                                            <input type="email" class="form-control border-main-color rounded-1" name="email-newsletter" id="email-newsletter" placeholder="Email here*" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="submit" class="btn bg-main-gradient rounded-1 py-2 px-4 fw-regular">Send Now</button>
+                                    </div>
+                                    <div class="col-6 h-100 align-items-center justify-content-center">
+                                        <div class="footer-social-media">
+                                            <a href="#">
+                                                <i class="icon icon-instagram"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon icon-facebook"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon icon-x"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon icon-linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-main-blue py-4 border-footer-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-7">
+                            <div class="copyright-text">
+                                Copyright &copy; TransitFlow | Designed by VictorFlow - Powered by Webflow.
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <ul class="footer-sitemap-list copyright-list">
+                                <li><a href="#">Style Guide</a></li>
+                                <li><a href="#">Licenses</a></li>
+                                <li><a href="#">Changelog</a></li>
+                                <li><a href="#">Password</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</body>
+
+</html>
